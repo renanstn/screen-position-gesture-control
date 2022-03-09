@@ -1,9 +1,11 @@
 # screen-position-gesture-control
 
+[![Python](https://img.shields.io/badge/python-%2314354C.svg?style=flat&logo=python&logoColor=white)](https://www.python.org/)
+[![Arduino](https://img.shields.io/badge/-Arduino-00979D?style=flat&logo=Arduino&logoColor=white)](https://www.arduino.cc/)
+
 ## Desenvolvimento
 
-Antes de acessar as portas seriais, é necessário dar permissão a ela da
-seguinte forma:
+É necessário dar permissão de leitura e escrita à porta serial antes de rodar o script `main.py` na máquina:
 
 ```sh
 sudo chmod a+rw /dev/ttyACM0
