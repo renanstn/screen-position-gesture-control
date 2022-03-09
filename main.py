@@ -1,15 +1,13 @@
 import serial
+import keyboard
 
 
-end_character = "!"
+with serial.Serial("/dev/ttyACM0", 9600, timeout=1) as serial_:
+    serial_.reset_input_buffer()
 
-with serial.Serial("/dev/ttyACM0", 9600, timeout=1) as ser:
-    ser.reset_input_buffer()
-    word = ""
     while True:
-        x = ser.read()
-        if x.decode("utf-8") == "!":
-            print(word)
-            word = ""
-        else:
-            word += x.decode("utf-8")
+        bytes_word = serial_.readline()
+        word = bytes_word.decode("utf-8")
+        word = word.replace("\n", "")
+        print(word)
+        print(word=="left")
