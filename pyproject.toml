@@ -7,7 +7,7 @@ authors = ["Renan Santana <renan_ota@hotmail.com>"]
 [tool.poetry.dependencies]
 python = "^3.9"
 pyserial = "^3.5"
-keyboard = "^0.13.5"
+PyAutoGUI = "^0.9.53"
 
 [tool.poetry.dev-dependencies]
 
