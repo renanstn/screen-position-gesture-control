@@ -11,14 +11,10 @@ with serial.Serial("/dev/ttyACM0", 9600, timeout=1) as serial_:
         signal = signal.replace("\n", "")
 
         if signal == "left":
-            print("left")
             pyautogui.hotkey("winleft", "left")
         elif signal == "right":
-            print("right")
             pyautogui.hotkey("winleft", "right")
         elif signal == "up":
-            print("up")
             pyautogui.hotkey("winleft", "up")
         elif signal == "down":
-            print("down")
             pyautogui.hotkey("winleft", "down")
