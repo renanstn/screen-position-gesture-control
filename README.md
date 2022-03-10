@@ -14,7 +14,7 @@ Absolutamente desnecessário, porém muito legal.
 
 ## Esquema de ligação
 
-![esquema de ligação](images/schema.jpg)
+<img src="images/schema.jpg" height="500"/>
 
 ## Como utilizar
 
